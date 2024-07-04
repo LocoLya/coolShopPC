@@ -1,0 +1,104 @@
+
+[
+  {
+    "type": "cards",
+    "id": 1,
+    "name": "RTX 2060",
+    "price": 200,
+    "image": "img/Cards/1.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 2,
+    "name": "RTX 4060",
+    "price": 250,
+    "image": "img/Cards/2.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 3,
+    "name": "RTX 3060",
+    "price": 220,
+    "image": "img/Cards/3.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 4,
+    "name": "RTX 2060 super",
+    "price": 270,
+    "image": "img/Cards/4.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 5,
+    "name": "RTX 1660",
+    "price": 210,
+    "image": "img/Cards/5.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 6,
+    "name": "RTX 1080",
+    "price": 100,
+    "image": "img/Cards/6.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 7,
+    "name": "RTX 4070",
+    "price": 290,
+    "image": "img/Cards/7.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 8,
+    "name": "RTX 2050",
+    "price": 250,
+    "image": "img/Cards/8.jpg"
+  },
+  {
+    "type": "cards",
+    "id": 9,
+    "name": "RX 580",
+    "price": 220,
+    "image": "img/Cards/9.jpg"
+  },
+
+
+  {
+    "type": "processor",
+    "id": 10,
+    "name": "Inte Core I5",
+    "price": 220,
+    "image": "img/Processors/1.jpg"
+  },
+  {
+    "type": "processor",
+    "id": 11,
+    "name": "Inte Core I3",
+    "price": 220,
+    "image": "img/Processors/2.jpg"
+  },
+  {
+    "type": "processor",
+    "id": 12,
+    "name": "Inte Core I7",
+    "price": 220,
+    "image": "img/Processors/3.jpg"
+  },
+  {
+    "type": "processor",
+    "id": 13,
+    "name": "Inte Core I9",
+    "price": 220,
+    "image": "img/Processors/4.jpg"
+  },
+  {
+    "type": "processor",
+    "id": 14,
+    "name": "Inte Core I10",
+    "price": 220,
+    "image": "img/Processors/5.jpg"
+  }
+  
+]
