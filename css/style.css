@@ -119,12 +119,13 @@ svg {
   background-color: #000;
   color: #eee;
   position: fixed;
+  z-index: 1000;
   top: 0;
   right: 0;
   bottom: 0;
   inset: 0 -400px 0 auto;
   display: grid;
-  grid-template-rows: 70px 1fr 60px 60px;
+  grid-template-rows: 70px 1fr 50px 145px 60px;
 }
 
 body.showCart .cart__tab {
@@ -137,12 +138,23 @@ body.showCart .container {
 }
 
 .cart__tab h1 {
-  padding: 20px;
+  padding: 20px 10px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 
-.cart__tab .cartEmail {
+.cart__tab .cart__total {
+  padding: 10px 10px;
+  text-align: right;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
   display: block;
   width: 100%;
   background-color: #fff;
@@ -155,13 +167,32 @@ body.showCart .container {
   border-bottom: 1px solid #000;
 }
 
-.cart__tab .cartEmail:focus {
+.form input:focus {
   outline: none !important;
 }
 
+.form * {
+  height: 40px;
+}
+
+
+.hideInfo {
+  display: none;
+}
+
+.checkOut {
+  background-color: #E8BC0E;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  height: 60px;
+}
+
+
+
 .btn {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  
 }
 
 .btn button {
@@ -173,7 +204,8 @@ body.showCart .container {
 }
 .btn .close {
   background-color: #eee;
-
+  width: 100%;
+  height: 60px;
 }
 
 .cart__list .cart__item {

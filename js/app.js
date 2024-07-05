@@ -6,15 +6,12 @@ let listProcessorsHTML = document.querySelector('.products__list-processor');
 let fastWatch = document.querySelector('.fastWatch');
 let closeBigCard = document.querySelector('.closeBigCard');
 let bigCard = document.querySelector('.bigCard');
-let checkOut = document.querySelector('.checkOut');
-
-
+let hideInfo = document.querySelector('.hideInfo');
 let listCartHTML = document.querySelector('.cart__list')
 let iconCartSpan = document.querySelector('.icon__cart span');
-
 let listProducts = [];
 let carts = [];
-
+let costs = [];
 
 iconCart.addEventListener('click', () => {
   body.classList.toggle('showCart');
@@ -24,19 +21,13 @@ close.addEventListener('click', () => {
   body.classList.toggle("showCart");
 })
 
-
-checkOut.addEventListener('click', () => {
-  let userPhone = document.querySelector('.cartEmail').value;
-  if (carts.length > 0 && userPhone != '') {
-    alert("Мы отправили ваш заказ, скоро наш менеджер вам напишит на почту");
-  } else if (!(carts.length > 0)) {
-    alert("Вы не выбрали товар");
-  } else if (userPhone == '') {
-    alert("Вы не ввели свою почту");
-  }
-})
-
-
+const updateCosts = () => {
+  costs = carts.map(cart => {
+    let product = listProducts.find(p => p.id == cart.product_id);
+    return `${product.name}: ${cart.quantity}`;
+  });
+  hideInfo.innerText = costs.join(', ');
+}
 
 const addDataToHTML = () => {
   listCardsHTML.innerHTML = '';
@@ -53,7 +44,7 @@ const addDataToHTML = () => {
       newProduct.innerHTML = `
       <img class="" src="${product.image}" alt="">
         <h2>${product.name}</h2>
-        <div class="price">${product.price}$</div>
+        <div class="price">${product.price}₽</div>
         <button class="fastWatch">
         Просмотр
         </button>
@@ -70,7 +61,6 @@ const addDataToHTML = () => {
     })
   }
 }
-
 
 listCardsHTML.addEventListener('click', handleClick);
 listProcessorsHTML.addEventListener('click', handleClick);
@@ -90,7 +80,7 @@ function handleClick(event) {
       <img src="${card.image}"></img>
       <h1 class="cardName">${card.name}</h1>
       <p class="cardDescription">${card.description}</p>
-      <h3 class="cardPrice">${card.price}</h3>
+      <h3 class="cardPrice">${card.price}₽</h3>
       <button class="closeBigCard">Close</button>
 
     `
@@ -102,7 +92,6 @@ function handleClick(event) {
     })
   } 
 }
-
 
 const addToCart = (product_id) => {
   let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
@@ -122,6 +111,7 @@ const addToCart = (product_id) => {
   addCartToHTML();
   addCartToMemory();
   updateButtonText(product_id, true);
+  updateCosts();
 }
 
 const addCartToMemory = () => {
@@ -131,35 +121,46 @@ const addCartToMemory = () => {
 const addCartToHTML = () => {
   listCartHTML.innerHTML = '';
   let totalQuantity = 0;
+  let totalPrice = 0;  // Переменная для общей суммы
+
   if(carts.length > 0) {
-    carts.forEach(cart => {
-      totalQuantity = totalQuantity + cart.quantity;
-      let newCart = document.createElement('div');
-      newCart.classList.add('cart__item');
-      newCart.dataset.id = cart.product_id;
-      let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
-      let info = listProducts[positionProduct]
-      console.log(info);
-      newCart.innerHTML = `
-      <div class="image">
-          <img src="${info.image}" alt="">
-        </div>
-        <div class="name">
-          ${info.name}
-        </div>
-        <div class="totalPrice">
-          ${info.price * cart.quantity}$
-        </div>
-        <div class="quantity">
-          <span class="minus"><</span>
-          <span>${cart.quantity}</span>
-          <span class="plus">></span>
-        </div>
-        `;
-        listCartHTML.appendChild(newCart);
-    })
+      carts.forEach(cart => {
+          totalQuantity += cart.quantity;
+          let newCart = document.createElement('div');
+          newCart.classList.add('cart__item');
+          newCart.dataset.id = cart.product_id;
+          let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
+          let info = listProducts[positionProduct];
+          console.log(info);
+          newCart.innerHTML = `
+          <div class="image">
+              <img src="${info.image}" alt="">
+          </div>
+          <div class="name">
+              ${info.name}
+          </div>
+          <div class="totalPrice">
+              ${info.price * cart.quantity}₽
+          </div>
+          <div class="quantity">
+              <span class="minus"><</span>
+              <span>${cart.quantity}</span>
+              <span class="plus">></span>
+          </div>
+          `;
+          listCartHTML.appendChild(newCart);
+
+          // Добавление к общей сумме
+          totalPrice += info.price * cart.quantity;
+      });
   }
+
+  // Обновление общего количества товаров в корзине
   iconCartSpan.innerText = totalQuantity;
+
+  // Обновление общей суммы в HTML
+  document.getElementById('totalPrice').innerText = `${totalPrice}₽`;
+  updateCosts();
 }
 
 listCartHTML.addEventListener('click', (event) => {
@@ -223,8 +224,6 @@ console.log(listProducts);
 initApp();
 
 var swiper = new Swiper(".mySwiper", {
-      
-
   slidesPerView: 3,
   spaceBetween: 30,
   breakpoints: {
@@ -248,6 +247,7 @@ var swiper = new Swiper(".mySwiper", {
     1680: {
       spaceBetween: 40,
       slidesPerView: 5
+
     }
   },
   loop: false,
