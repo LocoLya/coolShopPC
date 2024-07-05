@@ -6,6 +6,7 @@ let listProcessorsHTML = document.querySelector('.products__list-processor');
 let fastWatch = document.querySelector('.fastWatch');
 let closeBigCard = document.querySelector('.closeBigCard');
 let bigCard = document.querySelector('.bigCard');
+let checkOut = document.querySelector('.checkOut');
 
 
 let listCartHTML = document.querySelector('.cart__list')
@@ -22,6 +23,19 @@ iconCart.addEventListener('click', () => {
 close.addEventListener('click', () => {
   body.classList.toggle("showCart");
 })
+
+
+checkOut.addEventListener('click', () => {
+  let userPhone = document.querySelector('.cartEmail').value;
+  if (carts.length > 0 && userPhone != '') {
+    alert("Мы отправили ваш заказ, скоро наш менеджер вам напишит на почту");
+  } else if (!(carts.length > 0)) {
+    alert("Вы не выбрали товар");
+  } else if (userPhone == '') {
+    alert("Вы не ввели свою почту");
+  }
+})
+
 
 
 const addDataToHTML = () => {
