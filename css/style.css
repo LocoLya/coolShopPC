@@ -33,7 +33,7 @@ svg {
   display: flex;
   width: 30px;
   height: 30px;
-  background-color: red;
+  background-color: #e91e63;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -209,23 +209,77 @@ body.showCart .container {
 
 
 
+/* Основные стили для модального окна */
 .bigCard {
-  background-color: #141414;
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 0.87);
-  font-size: 15px;
-  left: 50%;
-  overflow: hidden;
   position: fixed;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 350px;
-  z-index: 10;
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.gg {
-  width: 100%;
+/* Анимация для плавного появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+/* Стили для содержимого модального окна */
+.bigCard img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.bigCard .cardName {
+  margin: 16px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.bigCard .cardDescription {
+  margin: 16px;
+  font-size: 1em;
+  text-align: center;
+  color: #555;
+}
+
+.bigCard .cardPrice {
+  margin: 16px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #e91e63;
+}
+
+.bigCard .closeBigCard {
+  display: block;
+  margin: 16px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bigCard .closeBigCard:hover {
+  background-color: #d81b60;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
@@ -234,9 +288,53 @@ body.showCart .container {
   }
 }
 
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .products__list {
     gap: 10px;
+  }
+
+  .bigCard {
+    width: 95%;
+  }
+
+  .bigCard .cardName {
+    font-size: 1.2em;
+  }
+
+  .bigCard .cardDescription {
+    font-size: 0.9em;
+  }
+
+  .bigCard .cardPrice {
+    font-size: 1em;
+  }
+
+  .bigCard .closeBigCard {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bigCard {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .bigCard .cardName {
+    font-size: 1em;
+  }
+
+  .bigCard .cardDescription {
+    font-size: 0.8em;
+  }
+
+  .bigCard .cardPrice {
+    font-size: 0.9em;
+  }
+
+  .bigCard .closeBigCard {
+    font-size: 0.8em;
+    padding: 6px 12px;
   }
 }
