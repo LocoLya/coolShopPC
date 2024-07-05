@@ -3,12 +3,17 @@ let body = document.querySelector('body');
 let close = document.querySelector('.close');
 let listCardsHTML = document.querySelector('.products__list-cards');
 let listProcessorsHTML = document.querySelector('.products__list-processor');
+let fastWatch = document.querySelector('.fastWatch');
+let closeBigCard = document.querySelector('.closeBigCard');
+let bigCard = document.querySelector('.bigCard');
+
 
 let listCartHTML = document.querySelector('.cart__list')
 let iconCartSpan = document.querySelector('.icon__cart span');
 
 let listProducts = [];
 let carts = [];
+
 
 iconCart.addEventListener('click', () => {
   body.classList.toggle('showCart');
@@ -17,6 +22,7 @@ iconCart.addEventListener('click', () => {
 close.addEventListener('click', () => {
   body.classList.toggle("showCart");
 })
+
 
 const addDataToHTML = () => {
   listCardsHTML.innerHTML = '';
@@ -51,21 +57,38 @@ const addDataToHTML = () => {
   }
 }
 
-listCardsHTML.addEventListener('click', (event) => {
-  let positionClick = event.target;
-  if(positionClick.classList.contains('cart__add')) {
-    let product_id = positionClick.parentElement.dataset.id;
-    addToCart(product_id);
-  }
-})
 
-listProcessorsHTML.addEventListener('click', (event) => {
+listCardsHTML.addEventListener('click', handleClick);
+listProcessorsHTML.addEventListener('click', handleClick);
+
+function handleClick(event) {
   let positionClick = event.target;
-  if(positionClick.classList.contains('cart__add')) {
-    let product_id = positionClick.parentElement.dataset.id;
+  let product_id = positionClick.parentElement.dataset.id;
+  if (positionClick.classList.contains('cart__add')) {
     addToCart(product_id);
-  }
-})
+  } if (positionClick.classList.contains('fastWatch')) {
+    let bigCard = document.createElement('div');
+    bigCard.classList.add('bigCard');
+
+    bigCard.dataset.id = product_id;
+    let card = listProducts[product_id - 1]
+    bigCard.innerHTML = `
+      <img src="${card.image}"></img>
+      <h1 class="cardName">${card.name}</h1>
+      <p class="cardDescription">${card.description}</p>
+      <h3 class="cardPrice">${card.price}</h3>
+      <button class="closeBigCard">Close</button>
+
+    `
+    
+    body.appendChild(bigCard);
+
+    bigCard.querySelector('.closeBigCard').addEventListener('click', () => {
+      bigCard.remove();
+    })
+  } 
+}
+
 
 const addToCart = (product_id) => {
   let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);

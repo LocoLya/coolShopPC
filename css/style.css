@@ -209,6 +209,25 @@ body.showCart .container {
 
 
 
+.bigCard {
+  background-color: #141414;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 15px;
+  left: 50%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 350px;
+  z-index: 10;
+}
+
+.gg {
+  width: 100%;
+}
+
+
 @media screen and (max-width: 1200px) {
   .products__list {
     grid-template-columns: repeat(2, 1fr);
