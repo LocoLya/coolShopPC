@@ -138,7 +138,6 @@ const addCartToHTML = () => {
           newCart.dataset.id = cart.product_id;
           let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
           let info = listProducts[positionProduct];
-          console.log(info);
           newCart.innerHTML = `
           <div class="image">
               <img src="${info.image}" alt="">
@@ -147,7 +146,7 @@ const addCartToHTML = () => {
               ${info.name}
           </div>
           <div class="totalPrice">
-              ${info.price * cart.quantity}₽
+              ${parseInt(info.price.replace(/\s/g, '')) * cart.quantity}₽
           </div>
           <div class="quantity">
               <span class="minus"><</span>
@@ -158,7 +157,7 @@ const addCartToHTML = () => {
           listCartHTML.appendChild(newCart);
 
           // Добавление к общей сумме
-          totalPrice += info.price * cart.quantity;
+          totalPrice += parseInt(info.price.replace(/\s/g, '')) * cart.quantity;
       });
   }
 
@@ -226,7 +225,6 @@ const initApp = () => {
   })
 }
 
-console.log(listProducts);
 
 initApp();
 
