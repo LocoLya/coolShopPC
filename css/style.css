@@ -75,6 +75,10 @@ svg {
   margin-bottom: 50px;
 }
 
+.mySwiper {
+  padding-right: 60px;
+}
+
 .product__item {
   position: relative;
   background-color: #eeeee6;
