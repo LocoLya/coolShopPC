@@ -1,10 +1,9 @@
-
 [
   {
     "type": "cards",
     "id": 1,
     "name": "RTX 2060",
-    "price": 200,
+    "price": "200",
     "image": "img/Cards/1.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -12,7 +11,7 @@
     "type": "cards",
     "id": 2,
     "name": "RTX 4060",
-    "price": 250,
+    "price": "250",
     "image": "img/Cards/2.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -20,7 +19,7 @@
     "type": "cards",
     "id": 3,
     "name": "RTX 3060",
-    "price": 220,
+    "price": "220",
     "image": "img/Cards/3.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -28,7 +27,7 @@
     "type": "cards",
     "id": 4,
     "name": "RTX 2060 super",
-    "price": 270,
+    "price": "270",
     "image": "img/Cards/4.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -36,7 +35,7 @@
     "type": "cards",
     "id": 5,
     "name": "RTX 1660",
-    "price": 210,
+    "price": "210",
     "image": "img/Cards/5.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -44,7 +43,7 @@
     "type": "cards",
     "id": 6,
     "name": "RTX 1080",
-    "price": 100,
+    "price": "100",
     "image": "img/Cards/6.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -52,7 +51,7 @@
     "type": "cards",
     "id": 7,
     "name": "RTX 4070",
-    "price": 290,
+    "price": "290",
     "image": "img/Cards/7.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -60,7 +59,7 @@
     "type": "cards",
     "id": 8,
     "name": "RTX 2050",
-    "price": 250,
+    "price": "250",
     "image": "img/Cards/8.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -68,17 +67,15 @@
     "type": "cards",
     "id": 9,
     "name": "RX 580",
-    "price": 220,
+    "price": "220",
     "image": "img/Cards/9.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
-
-
   {
     "type": "processor",
     "id": 10,
     "name": "Inte Core I5",
-    "price": 220,
+    "price": "220",
     "image": "img/Processors/1.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -86,7 +83,7 @@
     "type": "processor",
     "id": 11,
     "name": "Inte Core I3",
-    "price": 220,
+    "price": "220",
     "image": "img/Processors/2.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -94,7 +91,7 @@
     "type": "processor",
     "id": 12,
     "name": "Inte Core I7",
-    "price": 220,
+    "price": "220",
     "image": "img/Processors/3.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -102,7 +99,7 @@
     "type": "processor",
     "id": 13,
     "name": "Inte Core I9",
-    "price": 220,
+    "price": "220",
     "image": "img/Processors/4.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
@@ -110,9 +107,61 @@
     "type": "processor",
     "id": 14,
     "name": "Inte Core I10",
-    "price": 220,
+    "price": "220",
     "image": "img/Processors/5.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
-  }
+  },
+
+
   
+  {
+    "type": "assembliesPC",
+    "id": 15,
+    "name": "Мощная",
+    "price": "58 255",
+    "image": "img/assembliesPC/1.jpg",
+    "description": "Мощная сборка для современных игр<br><br>Операционная система: <span>Windows 10 PRO</span><br>Гарантийный срок: <span>12 месяцев</span><br>Объем оперативной памяти (Гб): <span>32 ГБ</span><br>Процессор: <span>Intel Xeon 2650v2</span><br>Количество ядер процессора: <span>8</span>"
+  },
+  {
+    "type": "assembliesPC",
+    "id": 16,
+    "name": "Оптимальная",
+    "price": "190 700",
+    "image": "img/assembliesPC/2.jpg",
+    "description": "Оптимальная сборка для игр и работы<br><br>Операционная система: <span>Windows 10 PRO</span><br>Гарантийный срок: <span>12 месяцев</span><br>Объем оперативной памяти (Гб): <span>32 ГБ</span><br>Процессор: <span>Intel Core i9</span><br>Количество ядер процессора: <span>8</span>"
+  },
+  {
+    "type": "assembliesPC",
+    "id": 17,
+    "name": "Кастомная",
+    "price": "1 000 000",
+    "image": "img/assembliesPC/3.jpg",
+    "description": "Кастомная суперсборка для экстремальных задач<br><br>Операционная система: <span>Windows 11 PRO</span><br>Гарантийный срок: <span>24 месяца</span><br>Объем оперативной памяти (Гб): <span>64 ГБ</span><br>Процессор: <span>Intel Core i10</span><br>Количество ядер процессора: <span>16</span>"
+  },
+  {
+    "type": "assembliesPC",
+    "id": 18,
+    "name": "Базовая",
+    "price": "300 000",
+    "image": "img/assembliesPC/1.jpg",
+    "description": "Базовая сборка для начинающих пользователей<br><br>Операционная система: <span>Windows 10 Home</span><br>Гарантийный срок: <span>6 месяцев</span><br>Объем оперативной памяти (Гб): <span>16 ГБ</span><br>Процессор: <span>Intel Core i5</span><br>Количество ядер процессора: <span>6</span>"
+  },
+  {
+    "type": "assembliesPC",
+    "id": 19,
+    "name": "Оптимальная",
+    "price": "190 700",
+    "image": "img/assembliesPC/2.jpg",
+    "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
+
+  },
+  {
+    "type": "assembliesPC",
+    "id": 20,
+    "name": "Кастомная",
+    "price": "1 000 000",
+    "image": "img/assembliesPC/3.jpg",
+    "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
+
+  }
 ]

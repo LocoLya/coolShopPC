@@ -1,6 +1,7 @@
 let iconCart = document.querySelector('.icon__cart');
 let body = document.querySelector('body');
 let close = document.querySelector('.close');
+let listAssembliesPC = document.querySelector(".products__list-assembliesPC")
 let listCardsHTML = document.querySelector('.products__list-cards');
 let listProcessorsHTML = document.querySelector('.products__list-processor');
 let fastWatch = document.querySelector('.fastWatch');
@@ -9,6 +10,7 @@ let bigCard = document.querySelector('.bigCard');
 let hideInfo = document.querySelector('.hideInfo');
 let listCartHTML = document.querySelector('.cart__list')
 let iconCartSpan = document.querySelector('.icon__cart span');
+
 let listProducts = [];
 let carts = [];
 let costs = [];
@@ -58,12 +60,17 @@ const addDataToHTML = () => {
       if (product.type == "processor") {
         listProcessorsHTML.appendChild(newProduct);
       }
+      if (product.type == "assembliesPC") {
+        listAssembliesPC.appendChild(newProduct);
+      }
+
     })
   }
 }
 
 listCardsHTML.addEventListener('click', handleClick);
 listProcessorsHTML.addEventListener('click', handleClick);
+listAssembliesPC.addEventListener('click', handleClick);
 
 function handleClick(event) {
   let positionClick = event.target;

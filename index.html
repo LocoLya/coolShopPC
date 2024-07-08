@@ -22,51 +22,38 @@
       </div>
     </header>
 
+    <div class="products">
 
-    <div class="swiper mySwiper">
-      <h1 class="list__title">Видеокарты</h1>
-      <div class="swiper-wrapper products__list-cards">
+      <div class="swiper mySwiper">
+        <h1 class="list__title">Сборки ПК</h1>
+        <div class="swiper-wrapper products__list-assembliesPC">
+        </div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      <div class="swiper-scrollbar"></div>
-    </div>
 
-    <div class="swiper mySwiper">
-      <h1 class="list__title">Процессоры</h1>
-      <div class="swiper-wrapper products__list-processor">
-
+      <div class="swiper mySwiper">
+        <h1 class="list__title">Видеокарты</h1>
+        <div class="swiper-wrapper products__list-cards">
+        </div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      <div class="swiper-scrollbar"></div>
-    </div>
 
-    <!-- <div class="products__list">
-      <div class="product__item">
-        <img src="img/video-card.png" alt="">
-        <h2>Name Price</h2>
-        <div class="price">200$</div>
-        <button class="cart__add">Add To Cart</button>
-      </div> 
-    </div> -->
+      <div class="swiper mySwiper">
+        <h1 class="list__title">Процессоры</h1>
+        <div class="swiper-wrapper products__list-processor">
+
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </div>
+    
   </div>
 
   <div class="cart__tab">
     <h1>Корзина</h1>
     <div class="cart__list">
-        <!-- <div class="cart__item">
-          <div class="image">
-          <img src="img/video-card.png" alt="">
-        </div>
-        <div class="name">
-          NAME
-        </div>
-        <div class="totalPrice">
-          200$
-        </div>
-        <div class="quantity">
-          <span class="minus"><</span>
-          <span>1</span>
-          <span class="plus">></span>
-        </div>
-      </div> -->
+        
     </div>
 
     <div class="cart__total">
@@ -76,10 +63,10 @@
     <!-- <input type="email" class="cartEmail" placeholder="E-mail или номер телефона"> -->
     <form action="https://api.web3forms.com/submit" method="POST" class="form">
 
-      <input type="hidden" name="access_key" value="3e6cdd40-90d6-4e7f-9a4f-511a12d67273">
+      <input type="hidden" name="access_key" value="1524a106-f9c2-417f-a5b2-b75060d8e192" >
   
       <input type="text" name="name" required placeholder="Имя">
-      <input type="email" name="email" required placeholder="E-mail или телефон">
+      <input type="phone" name="phone" required placeholder="Ваш телефон">
       <textarea name="message" required class="hideInfo">fff</textarea>
       <button type="submit" class="checkOut">Оформить</button>
     </form>
