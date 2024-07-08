@@ -1,9 +1,13 @@
 let iconCart = document.querySelector('.icon__cart');
 let body = document.querySelector('body');
 let close = document.querySelector('.close');
+
 let listAssembliesPC = document.querySelector(".products__list-assembliesPC")
 let listCardsHTML = document.querySelector('.products__list-cards');
 let listProcessorsHTML = document.querySelector('.products__list-processor');
+let listCasesHTML = document.querySelector('.products__list-cases');
+let listPeripheryHTML = document.querySelector('.products__list-periphery');
+
 let fastWatch = document.querySelector('.fastWatch');
 let closeBigCard = document.querySelector('.closeBigCard');
 let bigCard = document.querySelector('.bigCard');
@@ -26,9 +30,9 @@ close.addEventListener('click', () => {
 const updateCosts = () => {
   costs = carts.map(cart => {
     let product = listProducts.find(p => p.id == cart.product_id);
-    return `${product.name}: ${cart.quantity}`;
+    return `Товар:${product.name} - Кол-во:${cart.quantity} - ID:${product.id} - Цена:${product.price}`;
   });
-  hideInfo.innerText = costs.join(', ');
+  hideInfo.innerText = costs.join(';      ---    ');
 }
 
 const addDataToHTML = () => {
@@ -63,6 +67,12 @@ const addDataToHTML = () => {
       if (product.type == "assembliesPC") {
         listAssembliesPC.appendChild(newProduct);
       }
+      if (product.type == "cases") {
+        listCasesHTML.appendChild(newProduct);
+      }
+      if (product.type == "periphery") {
+        listPeripheryHTML.appendChild(newProduct);
+      }
 
     })
   }
@@ -71,6 +81,7 @@ const addDataToHTML = () => {
 listCardsHTML.addEventListener('click', handleClick);
 listProcessorsHTML.addEventListener('click', handleClick);
 listAssembliesPC.addEventListener('click', handleClick);
+listPeripheryHTML.addEventListener('click', handleClick);
 
 function handleClick(event) {
   let positionClick = event.target;

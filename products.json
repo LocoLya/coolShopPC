@@ -153,7 +153,6 @@
     "price": "190 700",
     "image": "img/assembliesPC/2.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
-
   },
   {
     "type": "assembliesPC",
@@ -162,6 +161,108 @@
     "price": "1 000 000",
     "image": "img/assembliesPC/3.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
+  },
 
+
+
+  {
+    "type": "cases",
+    "id": 21,
+    "name": "Белый",
+    "price": "2 500",
+    "image": "img/Cases/1.jpg",
+    "description": "Белый корпус"
+  },
+  {
+    "type": "cases",
+    "id": 22,
+    "name": "Черный",
+    "price": "4 700",
+    "image": "img/Cases/2.jpg",
+    "description": "Черный корпус"
+  },
+  {
+    "type": "cases",
+    "id": 23,
+    "name": "Белый",
+    "price": "6 300",
+    "image": "img/Cases/3.jpg",
+    "description": "Белый корпус"
+  },
+  {
+    "type": "cases",
+    "id": 24,
+    "name": "Черный",
+    "price": "9 000",
+    "image": "img/Cases/4.jpg",
+    "description": "Черный корпус"
+  },
+  {
+    "type": "cases",
+    "id": 25,
+    "name": "Белый",
+    "price": "1 700",
+    "image": "img/Cases/5.jpg",
+    "description": "Белый корпус"
+  },
+  {
+    "type": "cases",
+    "id": 26,
+    "name": "Черный",
+    "price": "1 000",
+    "image": "img/Cases/6.jpg",
+    "description": "Черный корпус"
+  },
+
+
+
+  {
+    "type": "periphery",
+    "id": 27,
+    "name": "Белая мышь",
+    "price": "2 500",
+    "image": "img/Periphery/1.jpg",
+    "description": "Стильная белая мышь для вашего ПК"
+  },
+  {
+    "type": "periphery",
+    "id": 28,
+    "name": "Черная клавиатура",
+    "price": "4 700",
+    "image": "img/Periphery/2.jpg",
+    "description": "Эргономичная черная клавиатура для удобной работы"
+  },
+  {
+    "type": "periphery",
+    "id": 29,
+    "name": "Белые наушники",
+    "price": "6 300",
+    "image": "img/Periphery/3.jpg",
+    "description": "Белые наушники с отличным качеством звука"
+  },
+  {
+    "type": "periphery",
+    "id": 30,
+    "name": "Черные динамики",
+    "price": "9 000",
+    "image": "img/Periphery/4.jpg",
+    "description": "Черные динамики с мощным звуком для вашего ПК"
+  },
+  {
+    "type": "periphery",
+    "id": 31,
+    "name": "Белая клавиатура",
+    "price": "1 700",
+    "image": "img/Periphery/5.jpg",
+    "description": "Белая клавиатура для комфортного набора текста"
+  },
+  {
+    "type": "periphery",
+    "id": 32,
+    "name": "Черная мышь",
+    "price": "1 000",
+    "image": "img/Periphery/6.jpg",
+    "description": "Черная мышь с высоким разрешением для точного управления"
   }
+
 ]
