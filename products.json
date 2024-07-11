@@ -71,6 +71,9 @@
     "image": "img/Cards/9.jpg",
     "description": "Видеокарта MSI GeForce 210 [N210-1GD3/LP] [PCI-E 2.0 1 ГБ GDDR3, 64 бит, DVI-I, HDMI, VGA (D-Sub), GPU 460 МГц]"
   },
+
+
+  
   {
     "type": "processor",
     "id": 10,

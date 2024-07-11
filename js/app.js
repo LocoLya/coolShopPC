@@ -20,11 +20,11 @@ let carts = [];
 let costs = [];
 
 document.getElementById('reviews').addEventListener('click', function() {
-  document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('.vk_comments').scrollIntoView({ behavior: 'smooth' });
 });
 
 document.getElementById('about').addEventListener('click', function() {
-  document.getElementById('vk_comments').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
 });
 
 iconCart.addEventListener('click', () => {

@@ -12,16 +12,22 @@
 <body>
  
   <header class="header">
-    <h1 class="title">Armagedon</h1>
-    <nav class="nav" id="nav">
-      <button class="nav__button" id="reviews">Отзывы</button>
-      <button class="nav__button" id="about">О нас</button>
-    </nav>
-    <div class="icon__cart">
-      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
-      </svg>
-      <span>0</span>
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__title">ingShopPC</a>
+        <div class="header__inner-right">
+          <nav class="nav" id="nav">
+            <button class="nav__button" id="reviews">Отзывы</button>
+            <button class="nav__button" id="about">О нас</button>
+          </nav>
+          <div class="icon__cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+            <span>0</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   
@@ -58,7 +64,7 @@
       </div>
 
       <div class="swiper mySwiper">
-        <h1 class="list__title">Перифирия</h1>
+        <h1 class="list__title">Периферия</h1>
         <div class="swiper-wrapper products__list-periphery">
 
         </div>
@@ -94,10 +100,13 @@
     </div>
   </div>
 
+  <!-- Put this div tag to the place, where the Comments block will be -->
+  <div id="vk_comments" class="vk_comments"></div>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a href="#" class="title">Armagedon</a>
+        <a href="#" class="footer__title">ingShopPC</a>
         <a href="mailto:Ivanov77@gmail.com" class="footer__email">Ivanov77@gmail.com</a>
         
       </div>
@@ -110,8 +119,7 @@
     VK.init({ apiId: 51987633, onlyWidgets: true });
   </script>
 
-  <!-- Put this div tag to the place, where the Comments block will be -->
-  <div id="vk_comments"></div>
+  
   <script type="text/javascript">
     VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
   </script>
