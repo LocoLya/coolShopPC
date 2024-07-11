@@ -19,6 +19,14 @@ let listProducts = [];
 let carts = [];
 let costs = [];
 
+document.getElementById('reviews').addEventListener('click', function() {
+  document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('about').addEventListener('click', function() {
+  document.querySelector('.vk__comments').scrollIntoView({ behavior: 'smooth' });
+});
+
 iconCart.addEventListener('click', () => {
   body.classList.toggle('showCart');
 })
@@ -245,7 +253,7 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     319: {
       spaceBetween: 24,
-      slidesPerView: 1.3
+      slidesPerView: 1.2
     },
     576: {
       spaceBetween: 30,
@@ -267,10 +275,10 @@ var swiper = new Swiper(".mySwiper", {
     }
   },
   loop: false,
-  freeMode: false,
+  freeMode: true,
   scrollbar: {
     el: ".swiper-scrollbar",
-    hide: true,
+    hide: false,
   },
 });
 

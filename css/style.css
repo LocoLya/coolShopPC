@@ -32,15 +32,17 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 100%;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .header .icon__cart {
   position: relative;
   margin-right: 10px;
-
-  z-index: 100;
-  position: fixed;
-  right: 10px;
 }
 
 .header .icon__cart svg {
@@ -78,6 +80,7 @@ svg {
 .mySwiper {
   padding-right: 60px;
 }
+
 
 .product__item {
   position: relative;
