@@ -24,7 +24,7 @@ document.getElementById('reviews').addEventListener('click', function() {
 });
 
 document.getElementById('about').addEventListener('click', function() {
-  document.querySelector('.vk__comments').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('vk_comments').scrollIntoView({ behavior: 'smooth' });
 });
 
 iconCart.addEventListener('click', () => {
