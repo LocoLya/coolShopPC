@@ -90,6 +90,7 @@ const addDataToHTML = () => {
 listCardsHTML.addEventListener('click', handleClick);
 listProcessorsHTML.addEventListener('click', handleClick);
 listAssembliesPC.addEventListener('click', handleClick);
+listCasesHTML.addEventListener('click', handleClick);
 listPeripheryHTML.addEventListener('click', handleClick);
 
 function handleClick(event) {
