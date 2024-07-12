@@ -93,6 +93,7 @@ listAssembliesPC.addEventListener('click', handleClick);
 listCasesHTML.addEventListener('click', handleClick);
 listPeripheryHTML.addEventListener('click', handleClick);
 
+
 function handleClick(event) {
   let positionClick = event.target;
   let product_id = positionClick.parentElement.dataset.id;
