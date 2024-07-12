@@ -282,3 +282,22 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+const swiperTop = new Swiper('.top__swiper', {
+  // Optional parameters
+  effect: "fade",
+
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+        type: "progressbar",
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -111,7 +111,6 @@ svg {
   padding-right: 60px;
 }
 
-
 .product__item {
   position: relative;
   background-color: #eeeee6;
@@ -163,7 +162,7 @@ svg {
 
 
 .cart__tab {
-  max-width: 400px;
+  max-width: 450px;
   background-color: #1e1e1e;
   color: #eee;
   position: fixed;
@@ -206,7 +205,7 @@ body.showCart .container {
   display: block;
   width: 100%;
   background-color: #fff;
-  pad24pxding: 20px;
+  padding: 20px;
   font-family: "Jost", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -252,9 +251,9 @@ body.showCart .container {
 
 .cart__list .cart__item {
   display: grid;
-  grid-template-columns: 70px 1fr 45px 1fr;
+  grid-template-columns: 70px 1fr 1fr 1fr;
   padding-right: 5px;
-  gap: 5px;
+  gap: 0px;
   text-align: center;
   align-items: center;
 }
@@ -292,23 +291,56 @@ body.showCart .container {
 
 .footer {
   background-color: #1e1e1e;
-  padding: 20px 0;
 }
 
 .footer__inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  padding-bottom: 10px;
-
+	display: flex;
+	flex-wrap: wrap;
+	padding: 70px 0;
 }
 
-.footer__title, .footer__email {
-  color: #eee;
+.footer__block {
+	width: 33.33333%;
+	padding: 0 15px;
+
+	text-align: center;
+}
+
+.footer__title {
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.footer__address {
+	font-size: 14px;
+	line-height: 1.5;
+	font-style: normal;
+	color: rgba(255, 255, 255, .5);
+}
+
+.footer__text {
+	font-size: 14px;
+	line-height: 1.5;
+	font-style: normal;
+	color: rgba(255, 255, 255, .5)
+}
+
+.footer__block:nth-child(2) .footer__title {
+  margin-bottom: 25px;
+}
+
+.telegram__link {
+  font-size: 90%;
+  border-radius: 4px;
+  background: #389ce9;
+  color: #fff;
+  padding: 10px 70px 10px 50px;
   text-decoration: none;
 }
-
-
 
 /* Основные стили для модального окна */
 .bigCard {
@@ -322,7 +354,7 @@ body.showCart .container {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
-  z-i24pxndex: 1000;
+  z-index: 2000;
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -417,6 +449,21 @@ body.showCart .container {
     font-size: 0.9em;
     padding: 8px 16px;
   }
+
+  .footer__block {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 30px
+	}
+
+	.footer__block:last-child {
+		margin-bottom: 0px;
+	}
+
+	.footer__inner {
+		padding: 30px 0;
+	}
 }
 
 @media (max-width: 628px) {
