@@ -19,6 +19,7 @@ let listProducts = [];
 let carts = [];
 let costs = [];
 
+
 document.getElementById('reviews').addEventListener('click', function() {
   document.querySelector('.vk_comments').scrollIntoView({ behavior: 'smooth' });
 });
