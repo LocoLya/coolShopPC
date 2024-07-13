@@ -170,7 +170,7 @@ svg {
   top: 0;
   right: 0;
   bottom: 0;
-  inset: 0 -400px 0 auto;
+  inset: 0 -450px 0 auto;
   display: grid;
   grid-template-rows: 70px 1fr 50px 145px 60px;
 }
